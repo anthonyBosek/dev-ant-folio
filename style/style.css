@@ -53,9 +53,12 @@ nav,
 }
 
 nav {
+  background: #333;
+  color: #aaa;
+  /* background: #6495ed; */
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 14vh;
 }
 
 .nav-links {
@@ -65,20 +68,23 @@ nav {
 }
 
 a {
-  color: black;
+  color: #aaa;
+  /* color: black; */
   text-decoration: none;
   text-decoration-color: white;
 }
 
 a:hover {
-  color: grey;
-  text-decoration: underline;
+  color: #6495ed;
+  /* color: grey; */
+  border-bottom: 3px solid #6495ed;
+  /* text-decoration: underline; */
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .logo:hover {

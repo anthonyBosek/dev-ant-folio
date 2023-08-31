@@ -3,6 +3,7 @@
 // document.querySelector("body").appendChild(h2);
 
 console.log("jello... ??");
+console.log("jello... ??");
 // function toggleMenu() {
 //     const menu = document.querySelector(".menu-links");
 //     const icon = document.querySelector(".hamburger-icon");

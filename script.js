@@ -1,5 +1,5 @@
 console.log("developer_ant is connected!!");
-
+// logic to implement light and dark mode toggle
 let theme = "light";
 const modeSelect = document.getElementById("mode");
 modeSelect.addEventListener("click", function () {

@@ -1,25 +1,10 @@
-console.log("developer_ant is connected!!");
-// logic to implement light and dark mode toggle
-let theme = "light";
-const modeSelect = document.getElementById("mode");
-modeSelect.addEventListener("click", function () {
-  if (theme === "light") {
-    newTheme = "dark";
-  } else {
-    newTheme = "light";
+const modeToggle = document.getElementById("modeToggle");
+const nav = document.getElementsByTagName("nav");
+const text = document.getElementsByClassName("text");
+modeToggle.addEventListener("click", function () {
+  document.body.classList.toggle("dark");
+  nav[0].classList.toggle("dark");
+  for (let i = 0; i < text.length; i++) {
+    text[i].classList.toggle("dark");
   }
-
-  const elements = document.getElementsByClassName(theme);
-  console.log(elements);
-  for (let i = 0; i < elements.length; i++) {
-    // elements[i].classList.remove(theme);
-    // elements[i].classList.replace(theme, newTheme);
-  }
-
-  if (theme === "light") {
-    theme = "dark";
-  } else {
-    theme = "light";
-  }
-  console.log(theme);
 });

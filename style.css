@@ -18,28 +18,36 @@ WT  - BLUE GREY    - GREY
 800 - #37474F      - #424242
 900 - #263238      - #212121
 */
-*/ body {
+body {
   background-color: var(--primary-page-bg);
   color: var(--primary-txt-color);
 
   /* global */
-  --primary-page-bg: #eaebeb;
+  --primary-page-bg: #cfd8dc;
+  /* --primary-page-bg: #eaebeb; */
   --accent-color: #1e90ff;
 
   /* mode-based */
-  --primary-txt-color: #353d44;
-  --container-panel-bg: #f2f2f2;
-  --section-panel-bg: #fdfdfd;
+  --primary-txt-color: #263238;
+  /* --primary-txt-color: #353d44; */
+  --container-panel-bg: #eceff1;
+  /* --container-panel-bg: #f2f2f2; */
+  --section-panel-bg: #b0bec5;
+  /* --section-panel-bg: #fdfdfd; */
   --btn-bg: var(--accent-color);
   --btn-color: var(--primary-txt-color);
   --divider-bg: var(--container-panel-bg);
 }
 body.dark {
-  --primary-page-bg: #333;
+  --primary-page-bg: #37474f;
+  /* --primary-page-bg: #333; */
   /*  */
-  --primary-txt-color: #fdfdfd;
-  --container-panel-bg: #353d44;
-  --section-panel-bg: #21262b;
+  --primary-txt-color: #eceff1;
+  /* --primary-txt-color: #fdfdfd; */
+  --container-panel-bg: #263238;
+  /* --container-panel-bg: #353d44; */
+  --section-panel-bg: #455a64;
+  /* --section-panel-bg: #21262b; */
   --btn-bg: #f2f2f2;
   --btn-color: #21262b;
   --divider-bg: var(--container-panel-bg);

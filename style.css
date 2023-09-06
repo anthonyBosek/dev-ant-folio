@@ -5,8 +5,20 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-body {
+/* 
+WT  - BLUE GREY    - GREY
+50  - #ECEFF1      - #FAFAFA
+100 - #CFD8DC      - #F5F5F5
+200 - #B0BEC5      - #EEEEEE
+300 - #90A4AE      - #E0E0E0
+400 - #78909C      - #BDBDBD
+500 - #607D8B      - #9E9E9E
+600 - #546E7A      - #757575
+700 - #455A64      - #616161
+800 - #37474F      - #424242
+900 - #263238      - #212121
+*/
+*/ body {
   background-color: var(--primary-page-bg);
   color: var(--primary-txt-color);
 

@@ -8,6 +8,7 @@ const navItem = document.getElementsByClassName("nav-item");
 
 for (let i = 0; i < navItem.length; i++) {
   navItem[i].addEventListener("click", function (e) {
-    console.log(e.target);
+    e.preventDefault();
+    console.log(e.target.innerHTML);
   });
 }

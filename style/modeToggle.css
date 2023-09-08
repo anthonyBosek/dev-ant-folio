@@ -1,0 +1,58 @@
+.mode-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 2vw;
+}
+label {
+  width: 50px;
+  height: 24px;
+  position: relative;
+  display: block;
+  border-radius: 24px;
+  cursor: pointer;
+  box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0 -5px 15px rgba(255, 255, 255, 0.4);
+  transition: 0.2s;
+}
+label:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: linear-gradient(180deg, #fdfdfd, #f2f2f2);
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+}
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+input[type="checkbox"]:checked + label {
+  background: #353d44;
+}
+input[type="checkbox"]:checked + label:after {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+label i {
+  position: absolute;
+  top: 4px;
+  z-index: 1;
+  transition: 0.2s;
+}
+label i.sun {
+  font-size: 16px;
+  left: 4px;
+  color: #ffc374;
+}
+label i.moon {
+  font-size: 16px;
+  right: 4px;
+  color: #000;
+}

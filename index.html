@@ -8,10 +8,26 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <title>developer_ant</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./modeToggle.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
+    <!-- mode toggle -->
+    <div class="mode-btn">
+      <input type="checkbox" id="mode-toggle" />
+      <label for="mode-toggle">
+        <i class="material-icons sun">wb_sunny</i>
+        <i class="material-icons moon">brightness_2</i>
+      </label>
+    </div>
+
+    <!-- main container -->
     <div class="container">
       <nav>
         <div class="logo">
@@ -20,10 +36,10 @@
           <span class="splash">/></span>
         </div>
         <ul class="nav-items">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Contact</a></li>
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#">About</a></li>
+          <li class="nav-item"><a href="#">Skills</a></li>
+          <li class="nav-item"><a href="#">Contact</a></li>
         </ul>
         <div class="links">
           <a href="#"><i class="fa fa-linkedin-square"></i></a>

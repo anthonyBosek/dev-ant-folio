@@ -77,3 +77,64 @@ nav {
   color: var(--accent-clr);
   transition: 0.3s;
 }
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+  overflow: hidden;
+}
+.clmn {
+  width: 50%;
+}
+.topline {
+  display: block;
+  position: relative;
+  font-size: 35px;
+  letter-spacing: 5px;
+  color: var(--main-txt-clr);
+}
+.topline::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 35px;
+  bottom: 20px;
+  background-color: var(--accent-clr);
+}
+.wrapper h1 {
+  display: block;
+  font-size: 5em;
+  font-weight: 800;
+  color: var(--main-txt-clr);
+}
+.multi-txt {
+  color: var(--accent-clr);
+}
+.wrapper p {
+  display: block;
+  width: 90%;
+  font-size: 1.25em;
+  color: var(--second-txt-clr);
+}
+.btns {
+  width: 100%;
+  position: relative;
+  left: 30%;
+}
+.btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 400;
+  color: var(--main-txt-clr);
+  background-color: var(--accent-clr);
+  padding: 5px 14px;
+  margin: 40px 5px;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4), 0 0 8px var(--main-txt-clr);
+}

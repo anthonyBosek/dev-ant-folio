@@ -5,10 +5,20 @@ modeToggle.addEventListener("click", function () {
 });
 
 const navItem = document.getElementsByClassName("nav-item");
+const pageList = document.getElementsByClassName("page");
 
 for (let i = 0; i < navItem.length; i++) {
   navItem[i].addEventListener("click", function (e) {
     e.preventDefault();
-    console.log(e.target.innerHTML);
+
+    const tab = e.target.innerHTML.toLowerCase();
+
+    for (let j = 0; j < pageList.length; j++) {
+      if ([...pageList[j].classList].includes(tab)) {
+        pageList[j].classList.remove("none");
+      } else {
+        pageList[j].classList.add("none");
+      }
+    }
   });
 }

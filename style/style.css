@@ -7,8 +7,9 @@
   font-family: "Eczar", serif;
 }
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
   --accent-clr: #1e90ff;
+  --accent-clr-2: #1ee5ff;
 
   /* light mode */
   --bg-clr: #f5f5f5;
@@ -34,6 +35,7 @@ nav {
   justify-content: space-around;
   height: 80px;
   line-height: 80px;
+  position: relative;
   z-index: 100;
   background-color: var(--primary-clr);
 }
@@ -44,7 +46,6 @@ nav {
   color: var(--main-txt-clr);
   letter-spacing: 3px;
   cursor: pointer;
-  /* text-transform: uppercase; */
 }
 .splash {
   margin: 0 10px;
@@ -78,7 +79,7 @@ nav {
   transition: 0.3s;
 }
 .wrapper {
-  height: 100vh;
+  height: calc(100vh - 80px);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -86,8 +87,43 @@ nav {
   padding: 0 10%;
   overflow: hidden;
 }
+.wrapper::before {
+  position: absolute;
+  content: "";
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  left: -8%;
+  top: 40%;
+  background: linear-gradient(45deg, var(--accent-clr), var(--accent-clr-2));
+  animation: circle1 4s linear infinite;
+}
+.wrapper::after {
+  position: absolute;
+  content: "";
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  left: 35%;
+  top: 12%;
+  background: linear-gradient(45deg, var(--accent-clr), var(--accent-clr-2));
+  animation: circle2 4s linear infinite;
+}
+@keyframes circle1 {
+  50% {
+    transform: scale(1.25);
+  }
+}
+@keyframes circle2 {
+  50% {
+    transform: translate(-15%, -20%);
+  }
+}
 .clmn {
   width: 50%;
+}
+.clmn0 {
+  z-index: 5;
 }
 .topline {
   display: block;
@@ -121,8 +157,8 @@ nav {
 }
 .btns {
   width: 100%;
-  position: relative;
-  left: 15%;
+  display: flex;
+  justify-content: flex-start;
 }
 .btn {
   outline: none;
@@ -141,6 +177,41 @@ nav {
 .btn:hover {
   transform: perspective(1px) scale(1.1);
   transition: 0.3s;
+}
+.imgbox {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.imgbox img {
+  position: relative;
+  height: 100%;
+  width: calc(90% - 80px);
+  top: -90px;
+  right: -100px;
+  border-radius: 50%;
+  animation: animateUser 4s linear infinite;
+}
+@keyframes animateUser {
+  50% {
+    right: -90px;
+    top: -80px;
+  }
+}
+.imgbox #splash {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-35deg);
+  width: 160%;
+  filter: saturate(200%);
+  animation: animate 4s linear infinite;
+}
+@keyframes animate {
+  50% {
+    top: 39%;
+    left: 51%;
+  }
 }
 
 /* TEST */

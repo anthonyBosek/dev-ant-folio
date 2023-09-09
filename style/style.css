@@ -7,7 +7,7 @@
   font-family: "Eczar", serif;
 }
 body {
-  /* overflow: hidden; */
+  overflow: hidden;
   --accent-clr: #1e90ff;
   --accent-clr-2: #1ee5ff;
 
@@ -79,6 +79,7 @@ nav {
   transition: 0.3s;
 }
 .wrapper {
+  margin-top: 50px;
   height: calc(100vh - 80px);
   width: 100%;
   display: flex;
@@ -96,7 +97,7 @@ nav {
   left: -8%;
   top: 40%;
   background: linear-gradient(45deg, var(--accent-clr), var(--accent-clr-2));
-  animation: circle1 4s linear infinite;
+  animation: circle1 8s linear infinite;
 }
 .wrapper::after {
   position: absolute;
@@ -111,12 +112,12 @@ nav {
 }
 @keyframes circle1 {
   50% {
-    transform: scale(1.25);
+    transform: scale(1.15);
   }
 }
 @keyframes circle2 {
   50% {
-    transform: translate(-15%, -20%);
+    transform: translate(-10%, -15%);
   }
 }
 .clmn {
